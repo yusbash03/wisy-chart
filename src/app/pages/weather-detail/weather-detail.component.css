@@ -1,0 +1,50 @@
+.canva{
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    height: 90%; 
+    margin: auto; 
+    margin-top: 50px;
+}
+
+.forecast{
+    align-items: center;    
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.forecast h2{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.forecast a{
+    flex-grow: 0;
+}
+
+.forecast div{
+    flex-grow: 1;
+}
+
+
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    background: 
+      linear-gradient(#60B99A 0 0) calc(1*100%/3) 50%/25% 50%,
+      linear-gradient(#60B99A 0 0) calc(2*100%/3) 50%/25% 50%,
+      linear-gradient(#f77825 0 0) 50% calc(1*100%/3)/50% 25%,
+      linear-gradient(#f77825 0 0) 50% calc(2*100%/3)/50% 25%,
+      linear-gradient(#554236 0 0) calc(1*100%/3) calc(1*100%/3)/25% 25%,
+      linear-gradient(#554236 0 0) calc(2*100%/3) calc(1*100%/3)/25% 25%,
+      linear-gradient(#554236 0 0) calc(1*100%/3) calc(2*100%/3)/25% 25%,
+      linear-gradient(#554236 0 0) calc(2*100%/3) calc(2*100%/3)/25% 25%;
+    background-repeat: no-repeat;
+    animation: l19 1s infinite alternate;
+  }
+  @keyframes l19 {
+    90%,100%{background-position: 0 50%,100% 50%,50% 0,50% 100%,0 0,100% 0,0 100%,100% 100%}
+  }
